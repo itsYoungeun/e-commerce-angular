@@ -15,6 +15,14 @@ import { ProductCardComponent } from "./product-card/product-card.component";
   styles: ``
 })
 export class ProductsListComponent {
+  
+  // server side request to fetch and display products from api
+  // async ngOnInit() {
+  //   const res = await fetch('https://fakestoreapi.com/products/category/electronics');
+  //   const data = await res.json();
+  //   this.products.set(data);
+  // }
+
   products = signal<Product[]>([
     {
       id: 1,
